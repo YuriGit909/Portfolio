@@ -22,3 +22,174 @@ body, html {
     height: 100vh;
 }
 
+header {
+    background-color: var(--cor-forte);
+}
+
+header > p {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 10px;
+    width: 100%;
+}
+
+
+section#sobre-mim {
+    display: flex;
+    flex-direction: column;
+}
+
+section#sobre-mim > div > p {
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 1.7em;
+    text-align: center;
+    padding: 15px 0;
+}
+
+div.linhas-tecnologias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+div.languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.2s;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+div.languages:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+div.languages > img {
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+div.languages > p {
+    font-weight: bold;
+}
+
+div.languages > p > abbr {
+    text-decoration: none;
+}
+
+section#projetos {
+    display: flex;
+    flex-direction: column;
+}
+
+section#projetos > a {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 200px;
+    height: 60px;
+    background-color: var(--cor-clara);
+    color: white;
+    text-decoration: none;
+    padding: 15px 0 10px;
+    margin: 20px 0 70px;
+    border-radius: 10px;
+    font-size: 1.3em;
+}
+
+section#projetos > a:hover {
+    background-color: var(--cor-meio-forte);
+}
+
+h2 {
+    font-size: 1.6em;
+    margin: 10px 0;
+    padding: 20px 0;
+    border-top: 5px solid var(--cor-media);
+}
+
+div.projetos-back {
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+div#android-news {
+    background: url(../images-mobile/android-news-mobile.png) top center no-repeat fixed;
+    background-size: cover;
+}
+
+div#cordel {
+    background: url(../images-mobile/cordel-mobile.png) top center no-repeat fixed;
+    background-size: cover;
+}
+
+div#login {
+    background: url(../images-mobile/login-mobile.png) top center no-repeat fixed;
+    background-size: cover;
+}
+
+div#redes-sociais {
+    background: url(../images-mobile/redes-sociais-mobile.png) top center no-repeat fixed;
+    background-size: cover;
+}
+
+section#contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#contact-buttons {
+    margin-top: 10px;
+}
+
+div#contact-buttons > a {
+    margin: 10px 15px 30px;
+}
+
+div#contact-buttons > a > img {
+    width: 50px;
+    border-top: 3px solid var(--cor-meio-forte);
+    transition: .3s;
+}
+
+div#contact-buttons > a > img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: var(--cor-forte);
+    height: 40px;
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: .9em;
+}
