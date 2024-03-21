@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+:root {
+    --cor-forte: #1118F0;
+    --cor-meio-forte: #5211F0;
+    --cor-media: #105EEF;
+    --cor-clara: #11A5F0;
+    --cor-mais-clara: #11ECF0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--cor-media), var(--cor-clara));
+        background-attachment: fixed;
+    }
+
+    header {
+        position: sticky;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    header p {
+        border: 3px solid white;
+        border-radius: 10px;
+    }
+
+    header nav {
+        width: 60%;
+    }
+    
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header li {
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: 0.3s;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    header li:hover {
+        background-color: var(--cor-clara);
+    }
+
+    main {
+        width: 80vw;
+        margin: auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    section#sobre-mim {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    section#sobre-mim > div {
+        width: 50%;
+    }
+
+    section#sobre-mim p {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    div#android-news {
+        background: url(../images-pc/android-news.png) top center no-repeat fixed;
+        background-size: contain;
+    }
+    
+    div#cordel {
+        background: url(../images-pc/cordel.png) top center no-repeat fixed;
+        background-size: contain;
+    }
+    
+    div#login {
+        background: url(../images-pc/login.png) top center no-repeat fixed;
+        background-size: contain;
+    }
+    
+    div#redes-sociais {
+        background: url(../images-pc/redes-sociais.png) top center no-repeat fixed;
+        background-size: contain;
+    }
+}
